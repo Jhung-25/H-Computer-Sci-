@@ -19,7 +19,7 @@ public class SetupExample extends PApplet{
         // the second parameter is declared as an int.
         someShape = new jHungShape(100,100,300,300,500);
         someShape.draw();
-        ExtendedShape exShape = new ExtendedShape();
+        rectShape exShape = new rectShape(100,100,100,100,100);
         exShape.draw();
         fill(255);
         background(255);
@@ -88,12 +88,12 @@ public class SetupExample extends PApplet{
     And we can use all of the Processing goodness inside of this
     one too!
      */
-    class ExtendedShape extends jHungShape {
-        ExtendedShape() {
+    class rectShape extends jHungShape {
+        rectShape(int x,int y, int w, int h, int c) {
             // call the ParentShape constructor
             // which will setup the properties
             // this color is cyan, btw.
-            super();
+            super(x,y,w,h,c);
         }
 
         public void draw() {
