@@ -12,7 +12,11 @@ def print_hi(name):
     print (sequentialSearch(array,target))
 
 def sequentialSearch(array,n):
-   return array.index(n);
+    for x in array:
+
+        if array[x] == n :
+            return x
+    return -1
 
 
 
