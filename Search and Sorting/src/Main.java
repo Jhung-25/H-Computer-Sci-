@@ -126,6 +126,12 @@ public class Main {
 //            }
 //        }
     }
+    public static ArrayList<Integer> mergeSort(ArrayList<Integer> arr){
+        if(arr.size()==0||arr.size()==1){
+            return arr;
+        }
+        mergeSort(arr.subList(0,(arr.size()/2)-1));
+    }
 
 
 }
