@@ -2,7 +2,8 @@ import processing.core.*;
 import processing.core.PApplet;
 
 public class SetupExample extends PApplet{
-    jHungShape someShape;
+    jHungShape shape2;
+    rectShape shape3,shape4,shape5,shape6,shape7,shape8,shape9,shape10,shape11,shape12,shape13,shape14;
     public static void main (String[] args) {
         PApplet.main(SetupExample.class.getSimpleName());
     }
@@ -12,23 +13,51 @@ public class SetupExample extends PApplet{
     }
 
     public void setup() {
-        background(255);
         // notice that I use color to create an integer
         // that represents red...
         // ... when you look in the constructor of ParentShape
         // the second parameter is declared as an int.
-        someShape = new jHungShape(100,100,300,300,0,0,0,0);
-        someShape.draw();
-        rectShape exShape = new rectShape(100,100,100,100,100,40,50,14);
+        noStroke();
+        background(255);
+        shape2= new jHungShape(508,467,640,640,0,0,0,0);
+        fill(0);
+        ellipse(508,467,640,640);
+        shape3= new rectShape(56,530,324,96,35,69,149,255);
+        shape4= new rectShape(235,643,900,8,255,255,255,255);
+        shape5= new rectShape(606,339,335,329,202,0,15,255);
+        shape6= new rectShape(167,589,673,12,255,255,255,255);
+        shape7= new rectShape(68,799,887,60,0,0,0,0);
+        shape8= new rectShape(285,815,422,13,255,255,255,255);
+        shape9= new rectShape(408,339,8,405,255,255,255,255);
+        shape10= new rectShape(376,396,40,32,255,255,255,255);
+        shape11= new rectShape(426,217,9,500,255,217,0,255);
+        shape2.draw();
+        shape3.draw();
+        shape4.draw();
+        shape5.draw();
+        shape6.draw();
+        shape7.draw();
+        shape8.draw();
+        shape9.draw();
+        shape10.draw();
+        shape11.draw();
 
+
+
+
+//        someShape.draw();
+//        rectShape exShape = new rectShape(100,100,100,100,100,40,50,14);
+//
 //        fill(255);
 //        background(255);
 //        fill(0);
 //        ellipse(508,467,640,640);
 //        fill(35,69,149,255);
 //        rect(56,530,324,96);
+
 //        fill(255);
 //        rect(235,643,900,8);
+
 //        fill(202,0,15,255);
 //        rect(606,339,335,329);
 //        fill(255);
@@ -42,7 +71,7 @@ public class SetupExample extends PApplet{
 //        fill(255,217,0,255);
 //        rect(426,217,9,500);
 //        fill(255);
-        exShape.draw();
+//        exShape.draw();
     }
 
     /*Declare a class INSIDE of the class
@@ -86,7 +115,7 @@ public class SetupExample extends PApplet{
 
         public void draw() {
             fill(color1,color2,color3,colorA);
-            ellipse(x, y, w,h);
+            ellipse(x,y,w,h);
         }
     }
 
