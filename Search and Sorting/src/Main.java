@@ -3,9 +3,23 @@ public class Main {
     public static void main(String[] args) {
         int[] arr = new int[]{1, 2, 3, 4, 5, 6};
         int[] sortArr= new int[ ]{3,4,6,2,1,9};
+        int[] testArr2=new int[]{3,4,6,2,1,9};
+
         System.out.println(sequentialSearch(4, arr));
         System.out.println(binarySearch(6,arr));
-        System.out.println(selectionSort(sortArr));
+//        int[] newArr=new int[sortArr.length];
+        int[] testArr=new int[testArr2.length];
+//        newArr=insertionSort(sortArr);
+        testArr=selectionSort(testArr2);
+//        for(int i=0;i<newArr.length;i++){
+//            System.out.print(newArr[i]);
+//
+//        }
+        System.out.println();
+        for(int i=0;i<testArr.length;i++){
+
+            System.out.print(testArr[i]);
+        }
     }
 
     public static int sequentialSearch(int tarNum, int[] arr) {
@@ -41,8 +55,29 @@ public class Main {
 
     }
     public static int[] insertionSort(int[]arr){
+        int temp=arr[0];
+        int newPlace=0;
+        int switchIndex;
+        int oldNum=0;
+        for(int i=0;i<arr.length-1;i++){
+            temp=arr[i+1];
+            for(int j=i+1;j>0;j--){
 
-        return null;
+                if(temp<arr[j-1]){
+                    newPlace=j-1;
+                    oldNum=arr[j-1];
+
+
+                }
+                else{
+                    break;
+                }
+            }
+
+            arr[newPlace]=temp;
+            arr[i]=oldNum;
+        }
+        return arr;
     }
     public static int[] selectionSort(int[] arr){
 
@@ -58,22 +93,24 @@ public class Main {
 
 
 
-        int low=arr[0];
+
         int indexOfLow=0;
         int placeHolder=0;
-         for(int j=0;j<arr.length;j++) {
+        int newBounds=arr.length;
 
-             for (int i = j; i < arr.length; i++) {
-                 if (arr[i] < low) {
-                     low = arr[i];
+         for(int j=0;j<newBounds-1;j++) {
+            indexOfLow=j;
+             for (int i = j+1; i < arr.length; i++) {
+                 if (arr[i] < arr[indexOfLow]) {
                      indexOfLow = i;
 
                  }
 
 
              }
-             arr[indexOfLow]=arr[j];
-             arr[j]=low;
+             placeHolder=arr[j];
+             arr[j]=arr[indexOfLow];
+             arr[indexOfLow]=placeHolder;
          }
         return arr;
 
