@@ -19,18 +19,19 @@ public class SetupExample extends PApplet{
         // the second parameter is declared as an int.
         noStroke();
         background(255);
-        shape2= new jHungShape(508,467,640,640,0,0,0,0);
-        fill(0);
-        ellipse(508,467,640,640);
+        shape2= new jHungShape(508,467,640,640,0,0,0,255);
+//        fill(0);
+//        ellipse(508,467,640,640);
         shape3= new rectShape(56,530,324,96,35,69,149,255);
         shape4= new rectShape(235,643,900,8,255,255,255,255);
         shape5= new rectShape(606,339,335,329,202,0,15,255);
         shape6= new rectShape(167,589,673,12,255,255,255,255);
-        shape7= new rectShape(68,799,887,60,0,0,0,0);
+        shape7= new rectShape(68,799,887,60,0,0,0,255);
         shape8= new rectShape(285,815,422,13,255,255,255,255);
         shape9= new rectShape(408,339,8,405,255,255,255,255);
         shape10= new rectShape(376,396,40,32,255,255,255,255);
         shape11= new rectShape(426,217,9,500,255,217,0,255);
+
         shape2.draw();
         shape3.draw();
         shape4.draw();
@@ -54,10 +55,10 @@ public class SetupExample extends PApplet{
 //        ellipse(508,467,640,640);
 //        fill(35,69,149,255);
 //        rect(56,530,324,96);
-
+//
 //        fill(255);
 //        rect(235,643,900,8);
-
+//
 //        fill(202,0,15,255);
 //        rect(606,339,335,329);
 //        fill(255);
@@ -71,7 +72,7 @@ public class SetupExample extends PApplet{
 //        fill(255,217,0,255);
 //        rect(426,217,9,500);
 //        fill(255);
-//        exShape.draw();
+////        exShape.draw();
     }
 
     /*Declare a class INSIDE of the class
