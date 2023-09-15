@@ -4,6 +4,14 @@ public class Main {
         int[] arr = new int[]{1, 2, 3, 4, 5, 6};
         int[] sortArr= new int[ ]{3,4,6,2,1,9};
         int[] testArr2=new int[]{3,4,6,2,1,9};
+        ArrayList<Integer> sortedList=new ArrayList<Integer>();
+        ArrayList<Integer> sortList=new ArrayList<Integer>();
+        sortList.add(3);
+        sortList.add(4);
+        sortList.add(6);
+        sortList.add(2);
+        sortList.add(1);
+        sortList.add(9);
 
         System.out.println(sequentialSearch(4, arr));
         System.out.println(binarySearch(6,arr));
@@ -11,14 +19,19 @@ public class Main {
         int[] testArr=new int[testArr2.length];
 //        newArr=insertionSort(sortArr);
         testArr=selectionSort(testArr2);
+        sortedList=mergeSort(sortList);
 //        for(int i=0;i<newArr.length;i++){
 //            System.out.print(newArr[i]);
 //
 //        }
         System.out.println();
-        for(int i=0;i<testArr.length;i++){
+//        for(int i=0;i<testArr.length;i++){
+//
+//            System.out.print(testArr[i]);
+//        }
 
-            System.out.print(testArr[i]);
+        for(int i=0;i<sortedList.size();i++){
+            System.out.print(sortedList.get(i));
         }
     }
 
@@ -127,10 +140,45 @@ public class Main {
 //        }
     }
     public static ArrayList<Integer> mergeSort(ArrayList<Integer> arr){
+
         if(arr.size()==0||arr.size()==1){
             return arr;
         }
-        mergeSort(arr.subList(0,(arr.size()/2)-1));
+        ArrayList<Integer> returnArr=new ArrayList<Integer>();
+        ArrayList<Integer> left=new ArrayList<Integer>(arr.subList(0,arr.size()/2));
+        ArrayList<Integer> right= new ArrayList<Integer>(arr.subList(arr.size()/2,arr.size()));
+        left= mergeSort(left);
+        right=mergeSort(right);
+
+
+
+        return merge(left,right);
+    }
+    private static ArrayList<Integer> merge(ArrayList<Integer>left,ArrayList<Integer>right){
+        ArrayList<Integer>returnList=new ArrayList<Integer>();
+        int leftIndex = 0, rightIndex = 0;
+
+        while (leftIndex < left.size() && rightIndex < right.size()) {
+            if (left.get(leftIndex) <= right.get(rightIndex)) {
+                returnList.add(left.get(leftIndex));
+                leftIndex++;
+            } else {
+                returnList.add(right.get(rightIndex));
+                rightIndex++;
+            }
+        }
+
+        while (leftIndex < left.size()) {
+            returnList.add(left.get(leftIndex));
+            leftIndex++;
+        }
+
+        while (rightIndex < right.size()) {
+            returnList.add(right.get(rightIndex));
+            rightIndex++;
+        }
+
+        return returnList;
     }
 
 
