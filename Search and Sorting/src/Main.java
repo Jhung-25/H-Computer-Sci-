@@ -8,10 +8,11 @@ public class Main {
         ArrayList<Integer> sortList=new ArrayList<Integer>();
         sortList.add(3);
         sortList.add(4);
-        sortList.add(6);
+        sortList.add(600);
+        sortList.add(9);
         sortList.add(2);
         sortList.add(1);
-        sortList.add(9);
+        sortList.add(5);
 
         System.out.println(sequentialSearch(4, arr));
         System.out.println(binarySearch(6,arr));
