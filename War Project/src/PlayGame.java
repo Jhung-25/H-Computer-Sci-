@@ -28,7 +28,6 @@ public class PlayGame extends PApplet {
         ArrayList<Cards> shuffled = new ArrayList<Cards>(warGame.shuffleDeck(result));
         player1Deck = new ArrayList<Cards>(warGame.p1Deck(shuffled));
         player2Deck = new ArrayList<Cards>(warGame.p2Deck(shuffled));
-        warGame.war(player2Deck, player1Deck, 1);
         buttonW = 100;
         buttonH = 40;
         buttonX = width / 2 - buttonW / 2;
@@ -75,14 +74,8 @@ public class PlayGame extends PApplet {
     public void mousePressed() {
         // Check if mouse is pressed within the bounds of the rectangle
         if (mouseX > width / 2 - 60 && mouseX < width / 2 + 60 && mouseY > height / 2 - 20 && mouseY < height / 2 + 20) {
-            println("Button Pressed!"); // Print message to console if the button is pressed
-            if (warGame.war(player2Deck, player1Deck, 1) == 1) {
-                player1WinCount++;
-            }
-            if (warGame.war(player2Deck, player1Deck, 1) == 2) {
-                player2WinCount++;
-            }
-
+            println("Button Pressed!");
+            warGame.war(player2Deck, player1Deck, 1);
         }
 
     }
