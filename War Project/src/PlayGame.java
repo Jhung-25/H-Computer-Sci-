@@ -22,6 +22,7 @@ public class PlayGame extends PApplet {
     }
 
     public void setup() {
+        background(255);
         warGame = new WarGame(); // Create an instance of WarGame
         ArrayList<Cards> deck = new ArrayList<Cards>();
         ArrayList<Cards> result = new ArrayList<Cards>(warGame.createDeck(deck));
@@ -37,8 +38,8 @@ public class PlayGame extends PApplet {
     }
 
     public void draw() {
-        background(255);
-        if (mouseX >= buttonX && mouseX <= buttonX + buttonW && mouseY >= buttonY && mouseY <= buttonY + buttonH && mousePressed) {
+
+        if (mouseX >= buttonX && mouseX <= buttonX + buttonW && mouseY >= buttonY && mouseY <= buttonY + buttonH ) {
             fill(255, 180, 30);
             textSize(10);
 
@@ -59,24 +60,46 @@ public class PlayGame extends PApplet {
 
         fill(0);
         textSize(20);
-        text(mouseX + "," + mouseY, mouseX + 10, mouseY + 10);
+//        text(mouseX + "," + mouseY, mouseX + 10, mouseY + 10);
         text("Let's Play War", 440, 155);
         text("Player1 Win Count:" + player1WinCount, 260, 400);
         text("Player2 Win Count:" + player2WinCount, 620, 400);
         text("Player 1 Deck Size:" + player1Deck.size(), 100, 10);
         text("Player 2 Deck Size:" + player2Deck.size(), 100, 50);
-        player2Deck.get(1).draw(this, 200);
-        player1Deck.get(1).draw(this, 550);
+
 
 
     }
 
     public void mousePressed() {
         // Check if mouse is pressed within the bounds of the rectangle
-        if (mouseX > width / 2 - 60 && mouseX < width / 2 + 60 && mouseY > height / 2 - 20 && mouseY < height / 2 + 20) {
-            println("Button Pressed!");
-            warGame.war(player2Deck, player1Deck, 1);
-        }
+        if (mouseX >= buttonX && mouseX <= buttonX + buttonW && mouseY >= buttonY && mouseY <= buttonY + buttonH ) {
+            fill(255, 180, 30);
+            textSize(10);
+            background(255);
+            player1Deck.get(0).draw(this, 200);
+            player2Deck.get(0).draw(this, 550);
 
+            int warResult = warGame.war(player2Deck, player1Deck, 0);
+            if (warResult == 2) {
+                player1WinCount++;
+                updateDeckSizes();
+            } else if (warResult == 1) {
+                player2WinCount++;
+                updateDeckSizes();
+            }
+            else if(warResult==0){
+                player1Deck.get(3).draw(this,200);
+                player1Deck.get(3).draw(this,200);
+
+            }
+
+        }
     }
+
+    private void updateDeckSizes() {
+        text("Player 1 Deck Size:" + player1Deck.size(), 100, 10);
+        text("Player 2 Deck Size:" + player2Deck.size(), 100, 50);
+    }
+
 }
