@@ -7,9 +7,6 @@ public class Cards{
     PImage img, spriteSheet;
 
 
-//    public void draw(PApplet p){
-//        p.image('spriteSheet.png');
-//    }
 
     //1 = clubs
     //2 = hearts

@@ -85,13 +85,19 @@ public class WarGame {
 
     public  void tie(ArrayList<Cards> p1Deck, ArrayList<Cards> p2Deck, int currIndex) {
         // 3 cards down
+        //checks 4th one
         //ArrayList<Cards> tie = new ArrayList<Cards>();
+
 
         if(p2Deck.size()<=4) {
             System.out.println("Player 1 Wins!");
+            System.exit(0);
+
         }
         if(p1Deck.size()<=4) {
             System.out.println("Player 2 Wins!");
+            System.exit(0);
+
         }
         if(war(p1Deck, p2Deck, currIndex+4)==1) {
             for(int i=0; i<4; i++) {
