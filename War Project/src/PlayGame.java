@@ -56,7 +56,6 @@ public class PlayGame extends PApplet {
         textAlign(CENTER, CENTER);
         textSize(8);
 
-        text("Let's Play War!", 40, 25);
 
         fill(0);
         textSize(20);
@@ -72,7 +71,7 @@ public class PlayGame extends PApplet {
     }
 
     public void mousePressed() {
-        // Check if mouse is pressed within the bounds of the rectangle
+         // Check if mouse is pressed within the bounds of the rectangle
         if (mouseX >= buttonX && mouseX <= buttonX + buttonW && mouseY >= buttonY && mouseY <= buttonY + buttonH ) {
             fill(255, 180, 30);
             textSize(10);
@@ -83,23 +82,20 @@ public class PlayGame extends PApplet {
             int warResult = warGame.war(player2Deck, player1Deck, 0);
             if (warResult == 2) {
                 player1WinCount++;
-                updateDeckSizes();
             } else if (warResult == 1) {
                 player2WinCount++;
-                updateDeckSizes();
             }
             else if(warResult==0){
-                player1Deck.get(3).draw(this,200);
-                player1Deck.get(3).draw(this,200);
+                textSize(30);
+                text("Tie Breaker",width/2,(height/2)-40);
+                player1Deck.get(4).draw(this, 200);
+                player2Deck.get(4).draw(this, 550);
 
             }
 
         }
     }
 
-    private void updateDeckSizes() {
-        text("Player 1 Deck Size:" + player1Deck.size(), 100, 10);
-        text("Player 2 Deck Size:" + player2Deck.size(), 100, 50);
-    }
+
 
 }

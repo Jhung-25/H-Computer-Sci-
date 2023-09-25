@@ -6,6 +6,7 @@ public class Cards{
     private int suit;
     PImage img, spriteSheet;
 
+
 //    public void draw(PApplet p){
 //        p.image('spriteSheet.png');
 //    }
@@ -20,6 +21,7 @@ public class Cards{
     //ace = 14
 
     public void draw(PApplet p, int x) {
+        //card draw function draws the card based on its suit and value
         int srcX = 1;
         int srcY = 1;
 
