@@ -1,0 +1,7 @@
+By Alex, Justin, Jarett
+ To start, we first made a card class to set up a card type. from this we implimented it in a series of methods in the main class to run through basic function of playing cards. This included a create deck method, a shuffle method, and two methods that would build player1's deck and player2's deck. all of which used the card type as a parameter. in the main class we also implemented the game play mechanics. this included determining who would win when two cards were presented. this was our first challenge we faced. this was because when initalizing the card type, it had two values. (value, suit). in order to compare them, we had to only look at the first number.
+
+After the comparison was completed, we had to work on the tie method. At first we were stumped about whether or not we should make a new arraylist and them append it to winner deck, but ultimatly after some trial and error and some brain storming we decided on the final stratagie of not making a new arraylist.
+
+Finally, our last major issue was making sure that the code doesn't throw an error when the deck gets to zero. Intially we were over thinking this problem and trying to call all different sorts of methods. But after a little bit, we took a much simpilar approach.
+
