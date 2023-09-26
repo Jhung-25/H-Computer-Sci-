@@ -41,6 +41,14 @@ public class WarGame {
     public int war(ArrayList<Cards> p1Deck, ArrayList<Cards> p2Deck, int currIndex){
         //reset index if at zero
         int win;
+
+        if (p1Deck.isEmpty()) {
+            System.out.println("player 2 wins!");
+            System.exit(0);
+        } else if (p2Deck.isEmpty()) {
+            System.out.println("player 1 wins");
+            System.exit(0);
+        }
         if(p1Deck.get(currIndex).compare(p2Deck.get(currIndex)) > 0){
             p1Winner(p1Deck, p2Deck, currIndex);
             //p2Loser(p1Deck, p2Deck, currIndex);

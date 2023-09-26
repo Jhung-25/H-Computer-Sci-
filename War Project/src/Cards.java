@@ -27,7 +27,7 @@ public class Cards{
         }
 
         img = p.createImage(140, 190, PApplet.ARGB);
-
+        // for each suit and value of card find the appropite photo from sprite sheet
         if (suit == 1) {
             if (numbers == 14) {
                 img.copy(spriteSheet, srcX, srcY, 140, 190, 0, 0, 140, 190);
