@@ -1,145 +1,71 @@
 import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
-        int[] arr = new int[]{1, 2, 3, 4, 5, 6};
-        int[] sortArr= new int[ ]{3,4,6,2,1,9};
-        int[] testArr2=new int[]{3,4,6,2,1,9};
-        ArrayList<Integer> sortedList=new ArrayList<Integer>();
-        ArrayList<Integer> sortList=new ArrayList<Integer>();
-        sortList.add(3);
-        sortList.add(4);
-        sortList.add(600);
-        sortList.add(9);
-        sortList.add(2);
-        sortList.add(1);
-        sortList.add(5);
 
-        System.out.println(sequentialSearch(4, arr));
-        System.out.println(binarySearch(6,arr));
-//        int[] newArr=new int[sortArr.length];
-        int[] testArr=new int[testArr2.length];
-//        newArr=insertionSort(sortArr);
-        testArr=selectionSort(testArr2);
-        sortedList=mergeSort(sortList);
-//        for(int i=0;i<newArr.length;i++){
-//            System.out.print(newArr[i]);
-//
-//        }
-        System.out.println();
-//        for(int i=0;i<testArr.length;i++){
-//
-//            System.out.print(testArr[i]);
-//        }
-
-        for(int i=0;i<sortedList.size();i++){
-            System.out.print(sortedList.get(i));
-        }
     }
 
-    public static int sequentialSearch(int tarNum, int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == tarNum) {
+
+    public static int sequentialSearch(int tarNum, ArrayList<Integer> arrList) {
+        for (int i = 0; i < arrList.size(); i++) {
+            if (arrList.get(i) == tarNum) {
                 return i;
             }
         }
-
         return -1;
     }
 
-    public static int binarySearch(int tarNum, int[] arr) {
+    public static int binarySearch(int tarNum, ArrayList<Integer> arrList) {
         int start = 0;
-        int end = arr.length - 1;
+        int end = arrList.size() - 1;
         int midPoint = 0;
 
         while (start <= end) {
-            midPoint=start+(end-start) /2;
-            if(arr[midPoint]==tarNum){
+            midPoint = start + (end - start) / 2;
+            if (arrList.get(midPoint) == tarNum) {
                 return midPoint;
-
             }
-            if (arr[midPoint]<tarNum) {
-                start=midPoint+1;
+            if (arrList.get(midPoint) < tarNum) {
+                start = midPoint + 1;
+            } else {
+                end = midPoint - 1;
             }
-            else{
-                end=midPoint-1;
-            }
-
         }
         return -1;
-
     }
-    public static int[] insertionSort(int[]arr){
-        int temp=arr[0];
-        int newPlace=0;
-        int switchIndex;
-        int oldNum=0;
-        for(int i=0;i<arr.length-1;i++){
-            temp=arr[i+1];
-            for(int j=i+1;j>0;j--){
 
-                if(temp<arr[j-1]){
-                    newPlace=j-1;
-                    oldNum=arr[j-1];
+    public static ArrayList<Integer> insertionSort(ArrayList<Integer> arrList) {
+        int temp;
+        int newPlace;
+        for (int i = 1; i < arrList.size(); i++) {
+            temp = arrList.get(i);
+            newPlace = i;
+            while (newPlace > 0 && arrList.get(newPlace - 1) > temp) {
+                arrList.set(newPlace, arrList.get(newPlace - 1));
+                newPlace--;
+            }
+            arrList.set(newPlace, temp);
+        }
+        return arrList;
+    }
 
 
-                }
-                else{
-                    break;
+    public static ArrayList<Integer> selectionSort(ArrayList<Integer> arrList) {
+        int indexOfLow;
+        int placeHolder;
+        for (int j = 0; j < arrList.size() - 1; j++) {
+            indexOfLow = j;
+            for (int i = j + 1; i < arrList.size(); i++) {
+                if (arrList.get(i) < arrList.get(indexOfLow)) {
+                    indexOfLow = i;
                 }
             }
-
-            arr[newPlace]=temp;
-            arr[i]=oldNum;
+            placeHolder = arrList.get(j);
+            arrList.set(j, arrList.get(indexOfLow));
+            arrList.set(indexOfLow, placeHolder);
         }
-        return arr;
+        return arrList;
     }
-    public static int[] selectionSort(int[] arr){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        int indexOfLow=0;
-        int placeHolder=0;
-        int newBounds=arr.length;
-
-         for(int j=0;j<newBounds-1;j++) {
-            indexOfLow=j;
-             for (int i = j+1; i < arr.length; i++) {
-                 if (arr[i] < arr[indexOfLow]) {
-                     indexOfLow = i;
-
-                 }
-
-
-             }
-             placeHolder=arr[j];
-             arr[j]=arr[indexOfLow];
-             arr[indexOfLow]=placeHolder;
-         }
-        return arr;
-
-
-
-//        int lowest=arr[0];
-//        int place=0;
-//        int indexOfLow=0;
-//        for(int i =0;i<arr.length;i++){
-//            if(arr[i]<lowest){
-//                indexOfLow=i;
-//                lowest=arr[i];
-//            }
-//        }
-    }
     public static ArrayList<Integer> mergeSort(ArrayList<Integer> arr){
 
         if(arr.size()==0||arr.size()==1){
