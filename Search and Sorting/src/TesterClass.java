@@ -11,12 +11,14 @@ public class TesterClass {
         //size = size of each arrayList
         int totalCompsInsertion=0;
         int totalCompsSelection=0;
+        int totalCompsMerge=0;
 
 
         for (int i = 0; i < numRuns; i++) {
             ArrayList<Integer> randomArrList = genRandomArrList(size);
             totalCompsInsertion += insertionSortCompNum(new ArrayList<>(randomArrList));
             totalCompsSelection += selectionSortCompNum(new ArrayList<>(randomArrList));
+
         }
 
         double avgCompsInsertion = (double) totalCompsInsertion / numRuns;
@@ -66,4 +68,5 @@ public class TesterClass {
         }
         return numOfComp;
     }
+
 }
