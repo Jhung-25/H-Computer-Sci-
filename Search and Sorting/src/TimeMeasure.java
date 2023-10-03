@@ -17,6 +17,7 @@ public class TimeMeasure {
         long totalTimeInsertion=0;
         long totalTimeSelection=0;
         long totalTimeMerge=0;
+        long totalTimeQuick=0;
 
 
         for (int i = 0; i < numRuns; i++) {
@@ -24,12 +25,16 @@ public class TimeMeasure {
             totalTimeInsertion += insertionSortTime(new ArrayList<>(randomArrList));
             totalTimeSelection += selectionSortTime(new ArrayList<>(randomArrList));
             totalTimeMerge+= mergeSortTime(new ArrayList<>(randomArrList));
+            totalTimeQuick+= quickSortTime(new ArrayList<>(randomArrList));
 
 
         }
         long avgTimeInsertion = totalTimeInsertion / numRuns;
         long avgTimeSelection = totalTimeSelection / numRuns;
         long avgTimeMerge = totalTimeMerge / numRuns;
+        long avgTimeQuick= totalTimeQuick/numRuns;
+        System.out.println("Size: "+ size+ "avgTimeQuick"+avgTimeQuick);
+        System.out.println("Size: "+ size+ "avgTimeMerge"+avgTimeMerge);
 
 
         System.out.println("Size"+ size+" avg insertsortTime: "+ avgTimeInsertion + "avg selctionsortTime: "+ avgTimeSelection+ " avg mergesortTime"+ avgTimeMerge);
@@ -132,5 +137,43 @@ public class TimeMeasure {
 
         return returnList;
     }
+    public static long quickSortTime(ArrayList<Integer> arr){
+        long startTime = System.currentTimeMillis();
+        ArrayList<Integer> sortedArr = quickSort(arr);
+        long endTime = System.currentTimeMillis();
+        return endTime - startTime;
+    }
+
+
+
+
+        public static ArrayList<Integer> quickSort(ArrayList<Integer> array) {
+            if (array.size() <= 1) {
+                return array;
+            }
+
+            int pivot = array.get(array.size() / 2);
+            array.remove(array.size() / 2);
+            ArrayList<Integer> less = new ArrayList<>();
+            ArrayList<Integer> greater = new ArrayList<>();
+
+            for (int i : array) {
+                if (i <= pivot) {
+                    less.add(i);
+                } else {
+                    greater.add(i);
+                }
+            }
+
+            ArrayList<Integer> result = new ArrayList<>();
+            result.addAll(quickSort(less));
+            result.add(pivot);
+            result.addAll(quickSort(greater));
+            return result;
+        }
+
+
+
+
 
 }
