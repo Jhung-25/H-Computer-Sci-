@@ -10,7 +10,7 @@ public class Main {
             System.out.println(numbers[i]);
         }
     }
-    public static int[] ecCalculator(int [] numArr){
+    public static int ecCalculator(int [] numArr){
         numArr[1]=12;
         numArr[2]=2;
         for(int i=0;i<numArr.length;i+=4){
@@ -21,10 +21,10 @@ public class Main {
                 numArr[numArr[i+3]]=numArr[numArr[i+1]]*numArr[numArr[i+2]];
             }
             if(numArr[i]==99){
-                return numArr;
+                return numArr[0];
             }
         }
-        return numArr;
+        return numArr[0];
     }
 
 }
