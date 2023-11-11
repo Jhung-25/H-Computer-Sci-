@@ -36,7 +36,7 @@ public class Main {
             else if(opcode==3){
                 numArr[numArr[pointer+1]]=
 //                numArr[getData(numArr,pointer+1,mode1param,relPointer)]=input;
-                pointer+=2;
+                        pointer+=2;
             }
             else if(opcode==4){
                 System.out.println(getData(numArr, pointer + 1, mode1param,relPointer));
@@ -94,15 +94,15 @@ public class Main {
 
     }
     public static int getData(int []code,int index,int mode,int rel){
-      if(mode==0){
-          return code[code[index]];
-      }
+        if(mode==0){
+            return code[code[index]];
+        }
 //      else if(mode==2){
 //          return code[code[index+rel]];
 //      }
-      else{
-          return code[index];
-      }
+        else{
+            return code[index];
+        }
     }
     public static String inputFinder(int[]numArr,int outVal){
         for(int i=0;i<99;i++){
