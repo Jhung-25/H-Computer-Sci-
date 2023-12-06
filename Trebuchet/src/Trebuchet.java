@@ -18,7 +18,7 @@ public class Trebuchet {
                 }
             }
 
-]            for (int i = line.length() - 1; i >= 0; i--) {
+            for (int i = line.length() - 1; i >= 0; i--) {
                 if (Character.isDigit(line.charAt(i))) {
                     secondDigit = String.valueOf(line.charAt(i));
                     break;
