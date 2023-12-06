@@ -1002,10 +1002,18 @@ public class Main {
                 "97ninesevenrhchvppnztvfbfpkzrbcone\n" +
                 "sevendxbninefour2fourclmln\n" +
                 "1rdtwofjvdllht5eightsixfourbl";
+        String test="dqbx6six5twoone";
+        String test2= "sevendxbninefour2fourclmln";
         String arrStr[]=input.split("\n",0);
-        System.out.println(arrStr[1]);
+//        System.out.println(arrStr[1]);
         Trebuchet oneone=new Trebuchet(input);
         int output= oneone.outputCalc();
         System.out.println(output);
+//        Trebuchet tester=new Trebuchet(test);
+//        Trebuchet tester2=new Trebuchet(test2);
+//        tester2.outputCalc();
+//        tester.outputCalc();
+//        System.out.println(tester.outputCalc());
+
     }
 }
