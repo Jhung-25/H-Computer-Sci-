@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="762b6470-0d80-46af-ac22-a90ac8cbcd5c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Day 2/Day 2/src/Cubes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day 2/Day 2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 2/Day 2/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day 2/Day 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day 2/Day 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,15 +31,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Advent-of-Code",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/jaretthung/Documents/GitHub/H-Computer-Sci-/Trebuchet"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Advent-of-Code&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jaretthung/Documents/GitHub/H-Computer-Sci-/Trebuchet&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -57,16 +58,5 @@
       <updated>1701709041237</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>1008</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
