@@ -189,7 +189,9 @@ public class Main {
                 "Card 184: 95 26 39 98 51 33 67 43 59 11 | 19 44 30 10 18 47 57 95 25 78 53 61  2 87 88 22 37 45 75 83 29 34 48 97 84\n" +
                 "Card 185:  7 16 46 63 13  2 99  9 93 26 | 37 28 50 41 55 75 73  6 96 82 17 92 87 10 49 72 15 86 64 36 95 32 13  5 53\n" +
                 "Card 186: 14 21 68  8 64 78 15 89 19 59 | 43 22 10 85 63 60 90 62 97 17 33 39  7  6 58 51 47 54 11 50 36  2 31 46 34";
-
+        Lottery day4part1= new Lottery(input);
+        System.out.println(day4part1.findTotalCardAdded());
+//        System.out.println(day4part1.numWinNums.get(95));
 
 
 

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78e348db-a279-4809-93f0-99a8804fded9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Trebuchet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Trebuchet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day4/Day4/src/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day4/Day4/src/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day4/Day4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day4/Day4/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +37,7 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Advent-of-Code&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jaretthung/Documents/GitHub/H-Computer-Sci-/Day 2/Day 2/src/Main.java&quot;
