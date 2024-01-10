@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bb21507-6ba2-4ad8-8c82-2f8246ce1864" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Day3/Day3/src/Hailstone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day 2/Day 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day 2/Day 2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/Day3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Day3/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day4/Day4/src/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day4/Day4/src/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day4/Day4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day4/Day4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Trebuchet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Trebuchet/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2akcTcxDAo4nyqVT4KLTImAjn6a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Day6.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Advent-of-Code",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bb21507-6ba2-4ad8-8c82-2f8246ce1864" name="Changes" comment="" />
+      <created>1704866029135</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704866029135</updated>
+    </task>
+    <servers />
+  </component>
+</project>
