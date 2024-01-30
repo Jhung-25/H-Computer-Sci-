@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aac94a8a-e15d-4293-994b-b21ccc53977a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Day3/Day3/src/Hailstone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Day 2/Day 2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day 2/Day 2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Day3/Day3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/Day3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lottery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Trebuchet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Trebuchet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day 6/Day 6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day 6/Day 6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day 6/Day 6/out/production/Day 6/Day6.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day 6/Day 6/out/production/Day 6/Day6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day 6/Day 6/src/Day6.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day 6/Day 6/src/Day6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Day4/Lottery.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Day4/Lottery.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +40,7 @@
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Advent-of-Code&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
 }</component>

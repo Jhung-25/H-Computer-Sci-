@@ -13,19 +13,10 @@ public class Day6 {
     }
     public static ArrayList<String> arrayMaker(String starter) {
         ArrayList<String> inputArray = new ArrayList<String>();
-        String temp = "";
-        for (int i = 0; i < starter.length(); i++) {
-            if (starter.charAt(i) != '\n') {
-                temp += starter.charAt(i);
-                if (i == starter.length() - 1) {
-                    inputArray.add(temp);
-                }
-
-            } else {
-                inputArray.add(temp);
-                temp = "";
-            }
-        }
+        String []arr=new String[2];
+        arr=starter.split("\n");
+        inputArray.add(arr[0]);
+        inputArray.add(arr[1]);
         return inputArray;
     }
 
